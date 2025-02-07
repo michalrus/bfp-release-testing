@@ -33,7 +33,7 @@ jobs:
       - name: Download release artifacts from Hydra
         run: |
           nixdl="nix build -L --builders '' --max-jobs 0 --out-link"
-          ref="github:blockfrost/blockfrost-platform/pull/148/head"
+          ref="github:blockfrost/blockfrost-platform/pull/156/head"
 
           $nixdl  result-archive-x86_64-linux      "$ref"#internal.x86_64-linux.archive
           $nixdl  result-archive-x86_64-windows    "$ref"#internal.x86_64-windows.archive
